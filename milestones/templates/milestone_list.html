@@ -5,13 +5,16 @@
 	<div>
 		<h1> <b>Title:</b> {{ mile.title }} </h1>
 		<p> <b>Description:</b> {{ mile.description | linebreaks }} </p>
-		<small>
-			<b>Create Date:</b> {{ mile.start_date | timesince }}  |  <b>Due Date:</b> {{ mile.due_date }}
-		</small>
 		<p> <b>Complete?:</b> {{ mile.complete }} </p>
+		<small>
+			<b>Create Date:</b> <i>{{ mile.start_date | timesince }}</i>  |  
+			<b>Due Date:</b>    <i>{{ mile.due_date }}</i> | 
+			<b>Author: </b> 	<i>{{  mile.owner }} </i>
+		</small>
+		
 		<hr>
 	</div>
-	
+
 	{% endfor %}	
 
 </div>
