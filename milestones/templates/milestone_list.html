@@ -1,0 +1,17 @@
+<div>
+
+	{% for mile in milestone %}
+
+	<div>
+		<h1> <b>Title:</b> {{ mile.title }} </h1>
+		<p> <b>Description:</b> {{ mile.description | linebreaks }} </p>
+		<small>
+			<b>Create Date:</b> {{ mile.start_date | timesince }}  |  <b>Due Date:</b> {{ mile.due_date }}
+		</small>
+		<p> <b>Complete?:</b> {{ mile.complete }} </p>
+		<hr>
+	</div>
+	
+	{% endfor %}	
+
+</div>
