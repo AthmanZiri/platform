@@ -29,9 +29,12 @@ INSTALLED_APPS = [
     # http://whitenoise.evans.io/en/stable/django.html#using-whitenoise-in-development
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
 
     #user defined apps
     'milestones',
+=======
+>>>>>>> 6530ec01b4f0dd6191f3bf80c32cb89c860de185
     'users',
     'www',
 ]
@@ -53,7 +56,11 @@ ROOT_URLCONF = 'mentor001.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [os.path.join(PROJECT_ROOT, 'templates')],
+=======
+        'DIRS': [],
+>>>>>>> 6530ec01b4f0dd6191f3bf80c32cb89c860de185
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -132,5 +139,8 @@ STATICFILES_DIRS = [
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+<<<<<<< HEAD
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+=======
+>>>>>>> 6530ec01b4f0dd6191f3bf80c32cb89c860de185

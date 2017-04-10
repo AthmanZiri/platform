@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.contrib.auth.models import User, Group
 from django.shortcuts import get_object_or_404, render
 from django.contrib import messages
@@ -61,3 +62,8 @@ def profile(request):
 # @user_passes_test(lambda u: u.groups.filter(name='mentor').exists())
 # def mentor_profile(request):
 #     return HttpResponse("I am mentor")
+=======
+from django.shortcuts import render
+
+# Create your views here.
+>>>>>>> 6530ec01b4f0dd6191f3bf80c32cb89c860de185
